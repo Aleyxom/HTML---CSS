@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf">repositório público do GitHub</a>.</p>
+
+    <p>Você também pode acessar meu <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank" rel="external">canal do Youtube</a> sem sair desse site.</p>
+
+    <!-- rel="external" indica que o link aponta para um recurso externo -->
+     <!-- _blank indica que o link será aberto em uma nova aba -->
+
+     <h1>Usando links internos</h2>
+     <p>Você pode acessar minha segunda página do site <a href="page002.html" rel="next">clicando aqui</a>.</p>
+     <p><a href="https://www.hostnet.com.br/" target="_blank" rel="nofollow">Hostnet</a></p>
+     <!-- rel="nofollow" Diz explicitamente aos robôs de busca para não seguir o link e não transferir autoridade de classificação para a página de destino. -->
+
+     <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a>.</p>
+
+     <h1>Links para Downloads</h1>
+     <ul>
+        <li><a href="livro/01 - História da Internet.pdf" download="01 - História da Internet.pdf" type="application/pdf">Download do arquivo exemplo PDF</a></li>
+        <li><a  href="livro/01 - História da Internet.zip" download="01 - História da Internet.zip" type="application/zip">Download do arquivo exemplo ZIP</a></li>
+     </ul>
+</body>
+</html>
