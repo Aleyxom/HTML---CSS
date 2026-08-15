@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*precisa disso para cabeçalho fixo*/
         }
 
         td, th{
@@ -26,6 +27,21 @@
 
         thead, tfoot{
             background-color: lightgray;
+        }
+
+        thead > tr > th{
+            position: sticky; /*grudado*/
+            top: -1px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd){ /*ou 2n-1*/
+            background-color: rgba(255, 160, 122, 0.712);
+        }
+
+        tbody > tr:nth-child(even){ /*2n*/
+            background-color: antiquewhite;
+            font-weight: bold;
         }
 
         caption{
@@ -173,5 +189,28 @@
             </tr>
         </tfoot>
     </table>
+
+    <!--para testar cabeçalho fixo da tabela-->
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
+    <p>texto tex texto</p>
 </body>
 </html>
