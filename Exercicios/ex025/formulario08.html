@@ -9,7 +9,41 @@
     <h1>Exemplo de output de formulário com HTML5</h1>
     <form action="cadastro.php" method="get">
         <p>
-            l
+            <label for="in1">Número 1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required 
+            oninput="isoma.value = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">Número 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required 
+            oninput="isoma.value = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+            <!-- O output não é editável pelo usuário e o valor dele não é enviado junto com o formulário -->
+        </p>
+
+        <p>
+            <label for="irange">Selecione:</label>
+            <input type="range" name="range" id="irange" min="0" max="100" value="50"
+            oninput="iresultado.value = irange.value"       >
+        </p>
+        
+        <p>
+            <output name="resultado" id="iresultado">50</output>
+        </p>
+
+        <p>
+            <label for="iano">Em que ano vc nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2026" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output name="idade" id="iidade">0</output>
         </p>
 
         <p>
@@ -17,5 +51,12 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.value = Number(atual) - Number(iano.value)
+        }
+    </script>
 </body>
 </html>
