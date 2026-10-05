@@ -22,7 +22,7 @@ header h1{
 }
 
 menu ul{
-    style-type: none;
+    list-style-type: none;
     background-color: lightgray;
 }
 
